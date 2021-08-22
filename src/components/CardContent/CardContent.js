@@ -13,7 +13,7 @@ const CardContent = () => (
       Hello! I'm a brazilian Specialist Software Engineer :)
     </Paragraph>
     <Paragraph margin={{ bottom: "none" }} color={colors.secondary}>
-      Currently working at <Anchor style={{ color: colors.secondary }} href="https://www.creditas.com/" target="_blank">Creditas Tech</Anchor>.
+      Currently working at <Anchor color={colors.secondary} href="https://www.creditas.com/" target="_blank">Creditas Tech</Anchor>.
     </Paragraph>
   </CardBody>
 )
