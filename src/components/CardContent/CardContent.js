@@ -9,7 +9,7 @@ import colors from '../../config/colors';
 const CardContent = () => (
   <CardBody pad="medium" background={colors.alternateBackground}>
     <Heading level="2" margin="none" color={colors.primary}>J H KERSUL</Heading>
-    <Paragraph>
+    <Paragraph color={colors.secondary}>
       Hello! I'm a brazilian Specialist Software Engineer :)
     </Paragraph>
     <Paragraph margin={{ bottom: "none" }} color={colors.secondary}>
