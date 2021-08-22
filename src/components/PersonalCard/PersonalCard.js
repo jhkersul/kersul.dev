@@ -30,10 +30,10 @@ const PersonalCard = () => {
           a11yTitle="profile pic"
         />
       </CardHeader>
-      <CardContent />
-      <CardFooter>
+      <CardFooter pad={{ vertical: 'small' }}>
         <LinksNav />
       </CardFooter>
+      <CardContent />
     </Card>
   )
 }
