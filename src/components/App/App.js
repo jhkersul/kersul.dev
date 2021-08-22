@@ -1,9 +1,7 @@
 import {
   Grommet,
-  Main,
 } from 'grommet'
-import PersonalCard from '../PersonalCard/PersonalCard';
-import colors from '../../config/colors'
+import MainContent from '../MainContent/MainContent';
 
 const customTheme = {
   global: {
@@ -13,14 +11,10 @@ const customTheme = {
   },
 };
 
-function App() {
-  return (
-    <Grommet full theme={customTheme}>
-      <Main pad="small" background={colors.background} align="center" justify="center">
-        <PersonalCard />
-      </Main>
-    </Grommet>
-  );
-}
+const App = () => (
+  <Grommet full theme={customTheme}>
+    <MainContent />
+  </Grommet>
+);
 
 export default App;
