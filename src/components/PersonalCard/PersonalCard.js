@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import {
   Card,
-  CardBody,
+  CardHeader,
   Image,
   CardFooter,
   ResponsiveContext,
@@ -10,22 +10,6 @@ import CardContent from '../CardContent/CardContent';
 import LinksNav from '../LinksNav/LinksNav'
 import ProfilePic from '../../images/profile-pic.jpg'
 import colors from '../../config/colors';
-
-const Content = () => (
-  <>
-    <CardBody height="small">
-      <Image
-        fit="cover"
-        src={ProfilePic}
-        a11yTitle="profile pic"
-      />
-    </CardBody>
-    <CardContent />
-    <CardFooter>
-      <LinksNav />
-    </CardFooter>
-  </>
-)
 
 const PersonalCard = () => {
   const size = useContext(ResponsiveContext)
@@ -39,7 +23,17 @@ const PersonalCard = () => {
       elevation="none"
       {...(isSmallSize && smallProps)}
     >
-      <Content />
+      <CardHeader>
+        <Image
+          fit="cover"
+          src={ProfilePic}
+          a11yTitle="profile pic"
+        />
+      </CardHeader>
+      <CardContent />
+      <CardFooter>
+        <LinksNav />
+      </CardFooter>
     </Card>
   )
 }
